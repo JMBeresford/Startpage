@@ -1,10 +1,22 @@
 /* Body */
 body {
-	background: url("background.png");
+	background-color: rgb(48, 48, 48);
 	font: 1.2em 'Sarpanch', sans-serif;
-	font-weight: 300;
-	color: #FFF;
 	}
+	
+.myTabs {
+	background-color: rgba(255,255,255,0.6);
+}
+
+#banner {
+	background-color: rgba(255,255,255,0.6);
+}
+
+
+.tabContent {
+	background-color: rgb(95, 95, 95);
+}
+/*
 .preload {
 	transition: none;
 	}
@@ -14,7 +26,6 @@ h1 {
 	}
 
 
-/* Links */
 ul {
 	list-style-type: none;
 	margin-top: 8px;
@@ -47,7 +58,6 @@ a:hover {
 	}
 
 
-/* Containers */
 #boxes {
 	width: 99%;
 	margin: 0 1%;
@@ -71,7 +81,6 @@ a:hover {
 	}
 
 
-/* Search Boxes */
 .sbox {
 	float: left;
 	width: 25%;
@@ -130,3 +139,4 @@ input:hover, input:focus {
 	opacity: 1.0;
 	box-shadow: 0 0 4px #FFF;
 	}
+*/

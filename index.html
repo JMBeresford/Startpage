@@ -1,154 +1,146 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-	<link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<head>
 
-	<title>Welcome, John!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>Welcome...</title>
 
-	<script>
-	window.addEventListener('preload', function load() {
-	window.removeEventListener('preload', load, false);
-	document.body.classList.remove('preload');
-	}, false);
-	</script>
-</head>
+	</head>
 
-<body class="preload">
-<h1> Welcome to the Internet, John.</h1>
-<div align="center", id="boxes">
+	<body>
 
-	<div class="box"><h4><a href="https://google.com">Google </a></h4>
-		<ul>
-			<li><a href="https://play.google.com/music/"> Google Play Music </a></li>
-			<li><a href="https://mail.google.com"> GMail </a></li>
-			<li><a href="https://youtube.com"> YouTube </a></li>
-			<li><a href="https://drive.google.com"> Google Drive </a></li>
-			<li><a href="https://docs.google.com"> Google Docs </a></li>
-</ul>
-	</div>
+		<div class="container startpage">
 
-	<div class="box"><h4><a href="https://4chan.org">4Chan</a></h4>
-		<ul>
-			<li><a href="https://4chan.org/g/"> /g/ </a></li>
-			<li><a href="https://4chan.org/wg/"> /wg/ </a></li>
-			<li><a href="https://4chan.org/mu/"> /mu/ </a></li>
-			<li><a href="https://4chan.org/gif/"> /gif/ </a></li>
-			<li><a href="https://4chan.org/gd/"> /gd/ </a></li>
+			<div id="banner" class="jumbotron">
+				
+				<div class="text-center text-dark">
+					<h2> Welcome</h2>
+					<h5>Where would you like to go?</h5>
+				</div>
+
+			</div>
+
+			<ul class="nav nav-justified nav-tabs myTabs" role="tablist">
+
+				<li class="nav-item">
+					<a href="#social-tab" class="nav-link active text-dark" id="social-btn" data-toggle="tab" aria-controls="social-tab" aria-selected="true">Social</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#academics-tab" class="nav-link text-dark" id="academics-btn" data-toggle="tab" aria-controls="academics-tab" aria-selected="false">Academics</a>
+				</li>
+				
+				<li class="nav-item">
+					<a href="#media-tab" class="nav-link text-dark" id="media-btn" data-toggle="tab" aria-controls="media-tab" aria-selected="false">Media</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#utilities-tab" class="nav-link text-dark" id="utlities-btn" data-toggle="tab" aria-controls="utilities-tab" aria-selected="false">Utilities</a>
+				</li>
+					
 			</ul>
-	</div>
+				
+			<div id="nav-content" class="tab-content mt-3">
 
+				<div class="text-center tab-pane fade show active" role="tabpanel" aria-labelledby="social-btn" id="social-tab">
+					
+					<div class="row justify-content-center tabContent">
 
-<!--
-	<div class="sbox"><h4>Search</h4>
-		<table id="search">
+						<div class="col-md-1 my-2 mx-1">
+							<div class="card">
 
-			<tr>
-				<td><a href="https://startpage.com">Startpage</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
+								<a href="https://reddit.com"><img class="card-img-top image-fluid p-1" src="img/reddit.png" alt="img"></a>
+								
+							</div>
+
+						</div>
+
+						<div class="col-md-1 my-2 mx-1">
+							<div class="card">
+
+								<a href="https://facebook.com"><img class="card-img-top image-fluid p-1" src="img/facebook.png" alt="img"></a>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-1 my-2 mx-1">
+							<div class="card">
+
+								<a href="https://discord.com"><img class="card-img-top image-fluid p-1" src="img/discord.png" alt="img"></a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="text-center tab-pane fade tabContent" role="tabpanel" aria-labelledby="academics-btn" id="academics-tab">
+
+					<div class="row justify-content-center tabContent">
+
+						<div class="col-md-1 my-3">
+							<div class="card">
+
+								<a href="https://portal.mycod.us/"><img class="card-img-top image-fluid px-3" src="img/mycod.png" alt="img"></a>
+								<div class="card-body">
+									myCOD Portal
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-1 my-3">
+							<div class="card">
+
+								<img class="card-img-top image-fluid" src="img/reddit.png" alt="img">
+								<div class="card-body">
+									Reddit
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-1 my-3">
+							<div class="card">
+
+								<img class="card-img-top image-fluid" src="img/reddit.png" alt="img">
+								<div class="card-body">
+									Reddit
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="text-center tab-pane fade tabContent" id="media-tab">
+					
+				</div>
+
+				<div class="text-center tab-pane fade tabContent" id="utilities-tab">
+					
+				</div>
+
+			</div>
 			
-			<tr>
-				<td><a href="https://www.ixquick.com">Ixquick</a></td>
-				<td>
-					<form action="https://ixquick.com/do/search" method="post">
-					<input type="text" name="q" /></form>
-				</td>
-			</tr>
+		</div>
 
-			<tr>
-				<td><a href="https://startpage.com">Search #3</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-			<tr>
-				<td><a href="https://startpage.com">Search #4</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-			<tr>
-				<td><a href="https://startpage.com">Search #5</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-			<tr>
-				<td><a href="https://startpage.com">Search #6</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-			<tr>
-				<td><a href="https://startpage.com">Search #7</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-			<tr>
-				<td><a href="https://startpage.com">Search #8</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-			<tr>
-				<td><a href="https://startpage.com">Search #9</a></td>
-				<td>
-					<form action="https://startpage.com/do/search" method="post">
-					<input type="text" name="q" autofocus/></form>
-				</td>
-			</tr>
-
-		</table>
-	</div>
-
--->
-	<div class="box"><h4>League</h4>
-		<ul>
-			<li><a href="https://http://na.leagueoflegends.com/en/news/game-updates/patch"> Patch Notes </a></li>
-			<li><a href="https://na.op.gg/summoner/userName=buttplay"> OP.gg </a></li>
-			<li><a href="https://reddit.com/r/rengarmains"> /r/rengarmains </a></li>
-			<li><a href="https://www.twitch.tv/directory/game/League%20of%20Legends"> Streams </a></li>
-		</ul>
-	</div>
-
-
-	<div class="box"><h4>Nerd Shit</h4>
-		<ul>
-			
-			<li><a href="https://codecademy.com"> Codecademy </a></li>
-			<li><a href="https://whatbox.ca/manage"> Whatbox </a></li>
-			<li><a href="https://thepiratebay.se"> The Pirate Bay </a></li>
-		</ul>
-	</div>
-
-
-	<div class="box"><h4>Social Media</h4>
-		<ul>
-			<li><a href="https://facebook.com"> Facebook </a></li>
-			<li><a href="https://twitter.com"> Twitter </a></li>
-			<li><a href="https://reddit.com"> Reddit </a></li>
-		</ul>
-	</div>
-
-</div>
-
-</body>
+	</body>
 
 </html>
